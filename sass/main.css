@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VAR */
+.navbar {
+  height: 100%;
+  background-color: white;
+}
+.navbar .container-fluid {
+  padding: 1%;
+}
+.navbar .container-fluid .navbar-brand {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.7rem;
+  margin-left: 3%;
+}
+.navbar .container-fluid .nav-item .nav-link {
+  font-family: "Julius Sans One", sans-serif;
+}
+.navbar .container-fluid .nav-item .dropdown-menu .dropdown-item {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.portada img {
+  max-width: 100%;
+  height: auto;
+}
+
+.presentacion {
+  width: 70%;
+  height: 300px;
+  background-color: white;
+  margin: auto;
+}
+.presentacion .exito {
+  font-family: "Cormorant", serif;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20%;
+}
+.presentacion h3 {
+  font-family: "Cormorant", serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+.presentacion .sobreMi {
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.servicios .card {
+  border: none;
+}
+.servicios .card .card-body {
+  text-align: center;
+}
+.servicios .card .card-body .card-title {
+  font-family: "Julius Sans One", sans-serif;
+}
+.servicios .card .card-body .btn {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Julius Sans One", sans-serif;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* PAGES */
+.informacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% 2% 5% 2%;
+  gap: 2%;
+}
+.informacion .itemInfo {
+  width: 50%;
+}
+.informacion .itemInfo img {
+  width: 100%;
+}
+.informacion .itemInfo h2 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 5rem;
+}
+
+.footer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2EDF0;
+  justify-content: space-evenly;
+}
+.footer .itemFooter {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+}
+.footer .divIconos {
+  margin-left: 44%;
+  margin-bottom: 3%;
+}
+.footer .divIconos .icono {
+  max-width: 35px;
+}
+
+/* MEDIAS QUERIES */
+@media (max-width: 912px) {
+  .servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  .footer .divIconos {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .footer .divIconos {
+    margin-left: 30%;
+  }
+}/*# sourceMappingURL=main.css.map */
