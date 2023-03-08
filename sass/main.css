@@ -7,10 +7,11 @@
 /* VAR */
 .navbar {
   height: 100%;
-  background-color: white;
+  box-shadow: 0px 8px 5px 0px rgb(224, 211, 224);
 }
 .navbar .container-fluid {
   padding: 1%;
+  background-color: white;
 }
 .navbar .container-fluid .navbar-brand {
   font-family: "Julius Sans One", sans-serif;
@@ -31,7 +32,7 @@
 
 .presentacion {
   width: 70%;
-  height: 300px;
+  height: 250px;
   background-color: white;
   margin: auto;
 }
@@ -39,25 +40,66 @@
   font-family: "Cormorant", serif;
   text-align: center;
   font-size: 3rem;
-  margin-top: 20%;
-}
-.presentacion h3 {
-  font-family: "Cormorant", serif;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 10%;
-}
-.presentacion .sobreMi {
-  font-family: "Julius Sans One", sans-serif;
-  text-align: center;
+  padding-top: 10%;
 }
 
+.carousel {
+  margin-bottom: 10%;
+}
+
+/* .sobreMi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 2% 5% 2%;
+
+    .itemSobremi{
+        width: 50%;
+
+        .soy{
+            font-family: $subtitulos;
+            font-size: 3rem;
+            text-align: start;
+            margin-top: 25%;
+
+        }
+
+        h3{
+            font-family: $titulos;
+            font-size: 4.2rem;
+            text-align: center;
+            margin-top: -2%;
+        }
+
+        p{
+            text-align: center;
+            font-family: $subtitulos;
+            font-size: 1.8rem;
+            padding: 0%;
+        }
+
+        button{
+            font-family: $titulos;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    .itemImagen{
+        width: 50%;
+
+        img{
+            width: 100%;
+        }
+    }
+} */
 .servicios {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   margin: 2%;
+  margin-bottom: 10%;
 }
 .servicios .card {
   border: none;
@@ -91,6 +133,21 @@
   font-size: 15px;
 }
 
+h4 {
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin: 5%;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5%;
+  gap: 2%;
+}
+
 /* PAGES */
 .informacion {
   display: flex;
@@ -108,6 +165,20 @@
 .informacion .itemInfo h2 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 5rem;
+}
+
+.opiniones {
+  margin: 5%;
+}
+.opiniones .card {
+  border: none;
+  box-shadow: 4px 4px 5px 0px rgb(224, 211, 224);
+}
+.opiniones .card .card-body {
+  text-align: center;
+}
+.opiniones .card .card-body .card-title {
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .footer {
@@ -132,6 +203,13 @@
 
 /* MEDIAS QUERIES */
 @media (max-width: 912px) {
+  .instagram {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
   .servicios {
     display: flex;
     flex-direction: row;
@@ -144,6 +222,20 @@
   }
 }
 @media (max-width: 576px) {
+  .presentacion {
+    height: 100px;
+  }
+  .presentacion .exito {
+    font-size: 1.5rem;
+    padding-top: 10%;
+  }
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8%;
+    gap: 2%;
+  }
   .footer .divIconos {
     margin-left: 30%;
   }
