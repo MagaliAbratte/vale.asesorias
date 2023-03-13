@@ -18,10 +18,10 @@
   font-size: 1.7rem;
   margin-left: 3%;
 }
-.navbar .container-fluid .nav-item .nav-link {
+.navbar .container-fluid .navbar-nav .nav-item .nav-link {
   font-family: "Julius Sans One", sans-serif;
 }
-.navbar .container-fluid .nav-item .dropdown-menu .dropdown-item {
+.navbar .container-fluid .navbar-nav .dropdown-menu .dropdown-item {
   font-family: "Julius Sans One", sans-serif;
 }
 
@@ -47,52 +47,6 @@
   margin-bottom: 10%;
 }
 
-/* .sobreMi{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0% 2% 5% 2%;
-
-    .itemSobremi{
-        width: 50%;
-
-        .soy{
-            font-family: $subtitulos;
-            font-size: 3rem;
-            text-align: start;
-            margin-top: 25%;
-
-        }
-
-        h3{
-            font-family: $titulos;
-            font-size: 4.2rem;
-            text-align: center;
-            margin-top: -2%;
-        }
-
-        p{
-            text-align: center;
-            font-family: $subtitulos;
-            font-size: 1.8rem;
-            padding: 0%;
-        }
-
-        button{
-            font-family: $titulos;
-            font-size: 2rem;
-            text-align: center;
-        }
-    }
-
-    .itemImagen{
-        width: 50%;
-
-        img{
-            width: 100%;
-        }
-    }
-} */
 .servicios {
   display: flex;
   flex-direction: row;
@@ -179,6 +133,14 @@ h4 {
 }
 .opiniones .card .card-body .card-title {
   font-family: "Julius Sans One", sans-serif;
+}
+
+.contenedorInfo {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10%;
+  padding: 5%;
+  box-shadow: 4px 4px 5px 0px rgb(224, 211, 224);
 }
 
 .footer {
