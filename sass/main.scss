@@ -27,6 +27,7 @@ $colorFondos: #FCFCFD;
           .nav-item{
             .nav-link{
                 font-family: $titulos;
+                transition-duration: 1s ease;
             }
         }
             .dropdown-menu{
@@ -143,38 +144,12 @@ $colorFondos: #FCFCFD;
 
             h2{
                 font-family: $titulos;
-                font-size: 5rem;
+                font-size: 4rem;
             }
         }
     }
 
-    .opiniones{
-        margin: 5%;
-
-        .card{
-            border: none;
-            box-shadow: 4px 4px 5px 0px rgba(224,211,224,1);
-
-            .card-body{
-             text-align: center;
-     
-             .card-title{
-                 font-family: $titulos;
-             }
-            }
-    }
-}
-
-
-.contenedorInfo{
-    width: 50%;
-    margin: auto;
-    margin-bottom: 10%;
-    padding: 5%;
-    box-shadow:  4px 4px 5px 0px rgba(224,211,224,1);
-}
-
-
+    /* FOOTER */
 .footer{
     max-width: 100%;
     display: flex;
@@ -202,6 +177,8 @@ $colorFondos: #FCFCFD;
 
 @media (max-width: 912px){
 
+    /* INDEX */
+
     .instagram{
         display: flex;
         flex-direction: row;
@@ -218,6 +195,35 @@ $colorFondos: #FCFCFD;
         justify-content: space-evenly;
     } 
 
+    /* PAGES */
+
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5% 2% 5% 2%;
+        gap: 0%;
+
+        .itemInfo{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+
+            h2{
+                font-family: $titulos;
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    /* FOOTER */
     .footer{
         .divIconos{
             margin-left: 40%;
@@ -240,8 +246,11 @@ $colorFondos: #FCFCFD;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 8%;
         gap: 2%;
+
+        iframe{
+            margin: auto;
+        }
     }
 
     .footer{
