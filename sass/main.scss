@@ -49,23 +49,76 @@ $colorFondos: #FCFCFD;
 }
 
 .presentacion{
-    width: 70%;
+    width: 100%;
     height: 250px;
-    background-color: white;
-    margin: auto;
-
+    background-color: black;
 
     .exito{
         font-family: $subtitulos;
         text-align: center;
         font-size: 3rem;
-        padding-top: 10%;
-
+        color: white;
+        padding-top: 6%;
     }
 }
 
-.carousel{
-    margin-bottom: 10%;
+.link-sobreMi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+
+    .itemSobremi{
+        width: 50%;
+
+        img{
+            width: 100%;
+        }
+
+        h4{
+            font-family: $subtitulos;
+            text-align: start;
+            font-size: 3.3rem;
+        }
+
+        h2{
+            font-family: $titulos;
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        p{
+            font-family: $subtitulos;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 4%;
+        }
+
+        .boton{
+            align-items: center;
+            background-color: #FCFCFD;
+            border-radius: 4px;
+            border-width: 0;
+            box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #36395A;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: $titulos;
+            height: 50px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 40%;
+        }
+    }
 }
 
 .servicios{
@@ -111,6 +164,37 @@ $colorFondos: #FCFCFD;
       } 
     }
 
+    .testimonios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+        padding: 3%;
+        margin-bottom: 5%;
+
+        .itemTest{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            
+            img{
+                width: 140px;
+                margin-left: 30%;
+                border-radius: 50%;
+                margin-bottom: 3%;
+            }
+
+            p{
+                color: white;
+                text-align: center;
+                padding: 5%;
+                font-family: $subtitulos;
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+
     h4{
         font-family: $titulos;
         text-align: center;
@@ -145,6 +229,47 @@ $colorFondos: #FCFCFD;
             h2{
                 font-family: $titulos;
                 font-size: 4rem;
+            }
+        }
+    }
+
+    .tituloSobremi{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 8%;
+
+        h2{
+            font-family: $titulos;
+            font-size: 4.3rem;
+            padding-top: 10%;
+        }
+
+        h3{
+            font-family: $subtitulos;
+            font-size: 2rem;
+        }
+    }
+
+    .sobreMi{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .itemSmi{
+            width: 50%;
+
+            img{
+                width: 100%;
+            }
+
+            p{
+                width: 80%;
+                text-align: justify;
+                margin: auto;
+                padding-top: 15%;
+                font-family: $subtitulos;
+                font-size: 1.4rem;
             }
         }
     }

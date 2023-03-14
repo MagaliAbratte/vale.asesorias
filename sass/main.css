@@ -32,20 +32,69 @@
 }
 
 .presentacion {
-  width: 70%;
+  width: 100%;
   height: 250px;
-  background-color: white;
-  margin: auto;
+  background-color: black;
 }
 .presentacion .exito {
   font-family: "Cormorant", serif;
   text-align: center;
   font-size: 3rem;
-  padding-top: 10%;
+  color: white;
+  padding-top: 6%;
 }
 
-.carousel {
-  margin-bottom: 10%;
+.link-sobreMi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.link-sobreMi .itemSobremi {
+  width: 50%;
+}
+.link-sobreMi .itemSobremi img {
+  width: 100%;
+}
+.link-sobreMi .itemSobremi h4 {
+  font-family: "Cormorant", serif;
+  text-align: start;
+  font-size: 3.3rem;
+}
+.link-sobreMi .itemSobremi h2 {
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+  font-size: 5rem;
+}
+.link-sobreMi .itemSobremi p {
+  font-family: "Cormorant", serif;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4%;
+}
+.link-sobreMi .itemSobremi .boton {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Julius Sans One", sans-serif;
+  height: 50px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 40%;
 }
 
 .servicios {
@@ -88,6 +137,33 @@
   font-size: 15px;
 }
 
+.testimonios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  padding: 3%;
+  margin-bottom: 5%;
+}
+.testimonios .itemTest {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.testimonios .itemTest img {
+  width: 140px;
+  margin-left: 30%;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+.testimonios .itemTest p {
+  color: white;
+  text-align: center;
+  padding: 5%;
+  font-family: "Cormorant", serif;
+  font-size: 1.2rem;
+}
+
 h4 {
   font-family: "Julius Sans One", sans-serif;
   text-align: center;
@@ -120,6 +196,42 @@ h4 {
 .informacion .itemInfo h2 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 4rem;
+}
+
+.tituloSobremi {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 8%;
+}
+.tituloSobremi h2 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 4.3rem;
+  padding-top: 10%;
+}
+.tituloSobremi h3 {
+  font-family: "Cormorant", serif;
+  font-size: 2rem;
+}
+
+.sobreMi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.sobreMi .itemSmi {
+  width: 50%;
+}
+.sobreMi .itemSmi img {
+  width: 100%;
+}
+.sobreMi .itemSmi p {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  padding-top: 15%;
+  font-family: "Cormorant", serif;
+  font-size: 1.4rem;
 }
 
 /* FOOTER */
